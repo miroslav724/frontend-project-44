@@ -1,17 +1,18 @@
 import { genRandomNum } from '../getRandomNumbers.js';
-import { mainEngine } from '../index.js';
+import { greeting, mainEngine } from '../index.js';
 
-const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
-
-const description = 'Answer "yes" if the number is even, otherwise answer "no"';
-
-const getData = () => {
-  const question = genRandomNum(1, 100);
-  const questionRight = isEven(question);
-
-  return [question, questionRight];
+const playGround = () => {
+  const maxValue = 100;
+  const minValue = 1;
+  const randomNum = genRandomNum(minValue, maxValue);
+  const rightAnswer = randomNum % 2 === 0 ? 'yes' : 'no';
+  return [randomNum, rightAnswer];
 };
 
-const playGame = () => mainEngine(getData, description);
+const gameEven = () => {
+  const name = greeting();
+  console.log('Answer "yes" if the number i even, otherwise answer "no"');
+  mainEngine(playGround, name);
+};
 
-export default playGame;
+export default gameEven;
