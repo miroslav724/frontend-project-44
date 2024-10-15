@@ -7,7 +7,8 @@
     "brain-even": "bin/brainEven.js",
     "brain-calc": "bin/brainCalc.js",
     "brain-gcd": "bin/brainGcd.js",
-    "brain-progression": "bin/brainProgression.js"
+    "brain-progression": "bin/brainProgression.js",
+    "brain-prime": "bin/brainPrime.js"
   },
   "type": "module",
   "main": "index.js",
