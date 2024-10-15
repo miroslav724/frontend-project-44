@@ -2,7 +2,7 @@ import { greeting, mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
 
 const expression = () => {
-  const maxValue = 100;
+  const maxValue = 15;
   const minValue = 1;
   const a = genRandomNum(minValue, maxValue);
   const b = genRandomNum(minValue, maxValue);

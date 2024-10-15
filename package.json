@@ -6,7 +6,8 @@
     "brain-games": "bin/brainGames.js",
     "brain-even": "bin/brainEven.js",
     "brain-calc": "bin/brainCalc.js",
-    "brain-gcd": "bin/brainGcd.js"
+    "brain-gcd": "bin/brainGcd.js",
+    "brain-progression": "bin/brainProgression.js"
   },
   "type": "module",
   "main": "index.js",
