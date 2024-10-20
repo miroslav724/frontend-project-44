@@ -1,4 +1,4 @@
-import { greeting, mainEngine } from '../index.js';
+import { descriptionCalc, greeting, mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
 
 const expression = () => {
@@ -42,8 +42,8 @@ const game = () => {
 
 const gameCalc = () => {
   const name = greeting();
-  console.log('What is the result of the expression?');
-  return mainEngine(game, name);
+  const howplay = descriptionCalc();
+  return mainEngine(game, name, howplay);
 };
 
 export default gameCalc;

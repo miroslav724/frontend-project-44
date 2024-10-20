@@ -1,7 +1,7 @@
 import { genRandomNum } from '../getRandomNumbers.js';
-import { greeting, mainEngine } from '../index.js';
+import { descriptionEven, greeting, mainEngine } from '../index.js';
 
-const playGround = () => {
+const game = () => {
   const maxValue = 100;
   const minValue = 1;
   const randomNum = genRandomNum(minValue, maxValue);
@@ -11,8 +11,8 @@ const playGround = () => {
 
 const gameEven = () => {
   const name = greeting();
-  console.log('Answer "yes" if the number i even, otherwise answer "no"');
-  mainEngine(playGround, name);
+  const howplay = descriptionEven();
+  mainEngine(game, name, howplay);
 };
 
 export default gameEven;

@@ -1,4 +1,4 @@
-import { greeting, mainEngine } from '../index.js';
+import { descriptionProgression, greeting, mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
 import addProgression from '../progression.js';
 
@@ -17,8 +17,8 @@ const game = () => {
 
 const gameProgression = () => {
   const name = greeting();
-  console.log('What number is missing in the progression?');
-  mainEngine(game, name);
+  const howplay = descriptionProgression();
+  return mainEngine(game, name, howplay);
 };
 
 export default gameProgression;

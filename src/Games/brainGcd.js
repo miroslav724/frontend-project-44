@@ -1,4 +1,4 @@
-import { greeting, mainEngine } from '../index.js';
+import { descriptionGcd, greeting, mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
 import gcd from '../gcd.js';
 
@@ -14,8 +14,8 @@ const game = () => {
 
 const gameGcd = () => {
   const name = greeting();
-  console.log('Find the greatest common divisor of given numbers.');
-  mainEngine(game, name);
+  const howplay = descriptionGcd();
+  return mainEngine(game, name, howplay);
 };
 
 export default gameGcd;
