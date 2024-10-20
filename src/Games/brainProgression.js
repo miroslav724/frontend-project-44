@@ -1,6 +1,8 @@
-import { descriptionProgression, greeting, mainEngine } from '../index.js';
+import { mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
 import addProgression from '../progression.js';
+
+const alert = 'What number is missing in the progression?';
 
 const game = () => {
   const minCount1 = 5;
@@ -15,10 +17,6 @@ const game = () => {
   return [strProgression, rightAnswer];
 };
 
-const gameProgression = () => {
-  const name = greeting();
-  const howplay = descriptionProgression();
-  return mainEngine(game, name, howplay);
-};
+const gameProgression = () => mainEngine(game, alert);
 
 export default gameProgression;

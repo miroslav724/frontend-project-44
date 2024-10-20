@@ -1,5 +1,7 @@
 import { genRandomNum } from '../getRandomNumbers.js';
-import { descriptionEven, greeting, mainEngine } from '../index.js';
+import { mainEngine } from '../index.js';
+
+const alert = '"yes" if the number is even, otherwise answer "no".';
 
 const game = () => {
   const maxValue = 100;
@@ -10,9 +12,7 @@ const game = () => {
 };
 
 const gameEven = () => {
-  const name = greeting();
-  const howplay = descriptionEven();
-  mainEngine(game, name, howplay);
+  mainEngine(game, alert);
 };
 
 export default gameEven;

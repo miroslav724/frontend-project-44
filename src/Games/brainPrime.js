@@ -1,5 +1,7 @@
-import { descriptionPrime, greeting, mainEngine } from '../index.js';
+import { mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
+
+const alert = '"yes" if given number is prime. Otherwise answer "no".';
 
 const game = () => {
   const maxValue = 100;
@@ -17,10 +19,6 @@ const game = () => {
   return [randomNum, isPrime];
 };
 
-const gamePrime = () => {
-  const name = greeting();
-  const howplay = descriptionPrime();
-  return mainEngine(game, name, howplay);
-};
+const gamePrime = () => mainEngine(game, alert);
 
 export default gamePrime;

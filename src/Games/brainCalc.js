@@ -1,5 +1,7 @@
-import { descriptionCalc, greeting, mainEngine } from '../index.js';
+import { mainEngine } from '../index.js';
 import { genRandomNum } from '../getRandomNumbers.js';
+
+const alert = 'What is the result of the expression?';
 
 const expression = () => {
   const maxValue = 15;
@@ -40,10 +42,6 @@ const game = () => {
   return [exp, rightAnswer];
 };
 
-const gameCalc = () => {
-  const name = greeting();
-  const howplay = descriptionCalc();
-  return mainEngine(game, name, howplay);
-};
+const gameCalc = () => mainEngine(game, alert);
 
 export default gameCalc;
