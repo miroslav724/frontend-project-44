@@ -8,7 +8,7 @@ export const greeting = () => {
   return name;
 };
 
-export const descriptionEven = () => console.log('Answer "yes" if the number i even, otherwise answer "no"');
+export const descriptionEven = () => console.log('Answer "yes" if the number is even, otherwise answer "no"');
 export const descriptionCalc = () => console.log('What is the result of the expression?');
 export const descriptionGcd = () => console.log('Find the greatest common divisor of given numbers.');
 export const descriptionPrime = () => console.log('"yes" if given number is prime. Otherwise answer "no".');
